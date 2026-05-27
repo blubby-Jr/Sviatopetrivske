@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Святопетрівський ліцей — Освіта</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#c8a84b;--gold-light:#e8c96a;--dark:#1a1f14;--dark2:#242b1c;--green:#3d5c2a;--green-light:#5a7c3e;--cream:#f5f0e8;--text:#2e2e2e;--muted:#6b6b5c;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Montserrat',sans-serif;background:var(--cream);color:var(--text);padding-top:80px;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(26,31,20,0.95);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:62px;border-bottom:1px solid rgba(200,168,75,0.2);}
+.nav-logo{font-family:'Playfair Display',serif;color:var(--gold);font-size:1rem;letter-spacing:.04em;text-decoration:none;font-weight:700;}
+.btn-back{background:var(--gold);color:var(--dark);text-decoration:none;font-size:.75rem;font-weight:700;padding:.5rem 1.2rem;border-radius:6px;text-transform:uppercase;letter-spacing:.05em;transition:.2s;}
+.btn-back:hover{background:var(--gold-light);}
+
+/* CONTENT */
+.container{max-width:900px;margin:2rem auto;padding:0 5vw;}
+.hero-sub{background:var(--dark2);color:#fff;padding:3rem;border-radius:16px;margin-bottom:2rem;border:1px solid rgba(200,168,75,0.15);}
+.page-title{font-family:'Playfair Display',serif;font-size:2.5rem;color:var(--gold-light);margin-bottom:.5rem;}
+.section-card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.04);margin-bottom:1.5rem;}
+h3{font-family:'Playfair Display',serif;color:var(--dark);font-size:1.4rem;margin-bottom:1rem;border-bottom:2px solid var(--cream);padding-bottom:.5rem;}
+p{font-size:.92rem;color:var(--muted);line-height:1.8;margin-bottom:1rem;}
+
+/* TABLE */
+table{width:100%;border-collapse:collapse;margin:1rem 0;}
+th{background:var(--dark);color:var(--gold);font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;padding:.75rem;text-align:left;}
+td{padding:.75rem;border-bottom:1px solid var(--cream);font-size:.88rem;color:var(--text);}
+tr:nth-child(even){background:var(--cream);}
+
+footer{background:var(--dark);padding:2rem 5vw;text-align:center;border-top:1px solid rgba(200,168,75,0.12);margin-top:4rem;color:rgba(255,255,255,.3);font-size:.72rem;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">🌾 Святопетрівське</a>
+  <a href="index.html" class="btn-back">← На головну</a>
+</nav>
+
+<div class="container">
+  <div class="hero-sub">
+    <h1 class="page-title">🏫 Академічний ліцей</h1>
+    <p style="color:rgba(245,240,232,.7); margin:0;">Освітній та культурний простір для молодого покоління нашого села.</p>
+  </div>
+
+  <div class="section-card">
+    <h3>Про навчальний заклад</h3>
+    <p>Святопетрівська загальноосвітня школа (наразі Академічний ліцей) — це місце, де класичні традиції викладання поєднуються із сучасними технологіями. Наш ліцей забезпечує комфортні умови для навчання понад 400 учнів громади.</p>
+    <p>У закладі функціонують затишні класи, комп'ютерний кабінет, інтерактивні дошки, а також спортивна та актова зали.</p>
+  </div>
+
+  <div class="section-card">
+    <h3>Розклад дзвінків (Основна школа)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Урок</th>
+          <th>Час проведення</th>
+          <th>Перерва</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1 урок</td><td>08:00 – 08:40</td><td>5 хв</td></tr>
+        <tr><td>2 урок</td><td>08:45 – 09:25</td><td>5 хв</td></tr>
+        <tr><td>3 урок</td><td>09:30 – 10:10</td><td>10 хв</td></tr>
+        <tr><td>4 урок</td><td>10:20 – 11:00</td><td>10 хв</td></tr>
+        <tr><td>5 урок</td><td>11:10 – 11:50</td><td>15 хв</td></tr>
+        <tr><td>6 урок</td><td>12:05 – 12:45</td><td>5 хв</td></tr>
+        <tr><td>7 урок</td><td>12:50 – 13:30</td><td>5 хв</td></tr>
+        <tr><td>8 урок</td><td>13:35 – 14:15</td><td>10 хв</td></tr>
+        <tr><td>9 урок</td><td>14:25 - 15:05</td><td>10 хв</td></tr>
+        <tr><td>10 урок</td><td>15:15 – 15:55</td><td>5 хв</td></tr>
+        <tr><td>11 урок</td><td>16:00 – 16:40</td><td>5хв</td></tr>
+        <tr><td>12 урок</td><td>16:45 – 17:25</td><td>5 хв</td></tr>
+        <tr><td>13 урок</td><td>17:30 – 18:10</td><td>Кінець уроків</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-card">
+    <h3>Розклад Їдальні (Основна школа)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Класи</th>
+          <th>Час</th>
+          <th>Після</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1-А 1-Б 1-В</td><td>09:20 – 09:30</td><td>2-го уроку</td></tr>
+        <tr><td>2-А 2-Б 2-Г 2-Д</td><td>10:10 – 10:20</td><td>3-го уроку</td></tr>
+        <tr><td>пільгові категорії, учні 8,10,11 класів (1 зміна)</td><td>11:00 – 11:10</td><td>4-го уроку</td></tr>
+        <tr><td>ГПД (ліцей)</td><td>12:05 – 12:20</td><td>На 6 уроці</td></tr>
+        <tr><td>3-А 3-Б 4-Г</td><td>13:30 – 13:40</td><td>7-го уроку</td></tr>
+        <tr><td>4-А 4-Б 3-Д</td><td>14:10 – 14:25</td><td>8-го уроку</td></tr>
+        <tr><td>Пільгові категорії, учні 6 класів (2 зміна)</td><td>15:05 – 15:25</td><td>9-го уроку</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-card">
+    <h3>Позакласна діяльність та гуртки</h3>
+    <p>На базі ліцею діють безкоштовні та комерційні секції для розвитку дітей:</p>
+    <ul style="margin-left: 1.5rem; font-size: .92rem; color: var(--muted); line-height: 1.8;">
+      <li>Секція з міні-футболу та волейболу</li>
+      <li>Гурток робототехніки та базового програмування</li>
+      <li>Студія образотворчого мистецтва "Палітра"</li>
+      <li>Шкільний хор та театральний міні-гурток</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  © 2026 · Білогородська громада · Шкільний відділ
+</footer>
+
+</body>
+</html>

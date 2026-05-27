@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Медична допомога — Святопетрівське</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#c8a84b;--gold-light:#e8c96a;--dark:#1a1f14;--dark2:#242b1c;--green:#3d5c2a;--green-light:#5a7c3e;--cream:#f5f0e8;--text:#2e2e2e;--muted:#6b6b5c;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Montserrat',sans-serif;background:var(--cream);color:var(--text);padding-top:80px;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(26,31,20,0.95);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:62px;border-bottom:1px solid rgba(200,168,75,0.2);}
+.nav-logo{font-family:'Playfair Display',serif;color:var(--gold);font-size:1rem;letter-spacing:.04em;text-decoration:none;font-weight:700;}
+.btn-back{background:var(--gold);color:var(--dark);text-decoration:none;font-size:.75rem;font-weight:700;padding:.5rem 1.2rem;border-radius:6px;text-transform:uppercase;letter-spacing:.05em;transition:.2s;}
+.btn-back:hover{background:var(--gold-light);}
+
+.container{max-width:900px;margin:2rem auto;padding:0 5vw;}
+.hero-sub{background:#6e1a1a;color:#fff;padding:3rem;border-radius:16px;margin-bottom:2rem;border:1px solid rgba(255,255,255,0.15);}
+.page-title{font-family:'Playfair Display',serif;font-size:2.5rem;color:#ff8a8a;margin-bottom:.5rem;}
+.section-card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.04);margin-bottom:1.5rem;}
+h3{font-family:'Playfair Display',serif;color:var(--dark);font-size:1.4rem;margin-bottom:1rem;border-bottom:2px solid var(--cream);padding-bottom:.5rem;}
+p{font-size:.92rem;color:var(--muted);line-height:1.8;margin-bottom:1rem;}
+
+.emergency-box{background:#fff3f3;border:1px solid #ffcccc;padding:1.2rem;border-radius:8px;color:#b52d2d;margin:1rem 0;font-weight:600;}
+.emergency-box a{color:#6e1a1a;font-weight:700;text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">🌾 Святопетрівське</a>
+  <a href="index.html" class="btn-back">← На головну</a>
+</nav>
+
+<div class="container">
+  <div class="hero-sub">
+    <h1 class="page-title">🏥 Медичний пункт (ФАП)</h1>
+    <p style="color:rgba(245,240,232,.8); margin:0;">Первинна медична допомога та охорона здоров'я жителів нашого села.</p>
+  </div>
+
+  <div class="emergency-box">
+    🚨 У разі екстрених ситуацій та загрози життю негайно телефонуйте: 
+    <a href="tel:103">103 (Швидка)</a> або <a href="tel:112">112 (Єдиний номер допомоги)</a>.
+  </div>
+
+  <div class="section-card">
+    <h3>Послуги медичного пункту</h3>
+    <p>Наш Фельдшерсько-акушерський пункт (ФАП) призначений для надання невідкладної долікарської та базової медичної допомоги. Тут ведуть прийом кваліфіковані медичні сестри та фельдшер.</p>
+    <ul style="margin-left:1.5rem; font-size:.92rem; color:var(--muted); line-height:1.8;">
+      <li>Первинний огляд, вимірювання артеріального тиску та температури</li>
+      <li>Проведення планових щеплень та вакцинації</li>
+      <li>Невідкладна допомога при травмах або раптовому погіршенні стану</li>
+      <li>Виконання ін'єкцій та перев'язок за призначенням сімейного лікаря</li>
+    </ul>
+  </div>
+
+  <div class="section-card">
+    <h3>Графік роботи та прийому</h3>
+    <p><strong>Понеділок – П'ятниця:</strong> 08:00 – 16:00</p>
+    <p><strong>Субота – Неділя:</strong> Вихідні дні</p>
+    <p style="font-style:italic; font-size:.85rem;">Примітка: Для планового прийому у профільних лікарів чи підписання декларацій з сімейними лікарями мешканці села звертаються до Білогородської центральної амбулаторії.</p>
+  </div>
+</div>
+
+<footer>
+  © 2026 · Білогородська громада · Охорона здоров'я
+</footer>
+
+</body>
+</html>

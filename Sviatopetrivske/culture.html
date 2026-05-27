@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Будинок Культури — Святопетрівське</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#c8a84b;--gold-light:#e8c96a;--dark:#1a1f14;--dark2:#242b1c;--green:#3d5c2a;--green-light:#5a7c3e;--cream:#f5f0e8;--text:#2e2e2e;--muted:#6b6b5c;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Montserrat',sans-serif;background:var(--cream);color:var(--text);padding-top:80px;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(26,31,20,0.95);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:62px;border-bottom:1px solid rgba(200,168,75,0.2);}
+.nav-logo{font-family:'Playfair Display',serif;color:var(--gold);font-size:1rem;letter-spacing:.04em;text-decoration:none;font-weight:700;}
+.btn-back{background:var(--gold);color:var(--dark);text-decoration:none;font-size:.75rem;font-weight:700;padding:.5rem 1.2rem;border-radius:6px;text-transform:uppercase;letter-spacing:.05em;transition:.2s;}
+.btn-back:hover{background:var(--gold-light);}
+
+.container{max-width:900px;margin:2rem auto;padding:0 5vw;}
+.hero-sub{background:linear-gradient(135deg, var(--green) 0%, var(--dark) 100%);color:#fff;padding:3rem;border-radius:16px;margin-bottom:2rem;border:1px solid rgba(200,168,75,0.15);}
+.page-title{font-family:'Playfair Display',serif;font-size:2.5rem;color:var(--gold-light);margin-bottom:.5rem;}
+.section-card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.04);margin-bottom:1.5rem;}
+h3{font-family:'Playfair Display',serif;color:var(--dark);font-size:1.4rem;margin-bottom:1rem;border-bottom:2px solid var(--cream);padding-bottom:.5rem;}
+p{font-size:.92rem;color:var(--muted);line-height:1.8;margin-bottom:1rem;}
+
+.grid-studios{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem;}
+.studio-item{background:var(--cream);padding:1rem;border-radius:8px;border-left:3px solid var(--gold);}
+.studio-title{font-weight:600;color:var(--dark);font-size:.95rem;margin-bottom:.3rem;}
+
+@media(max-width:600px){.grid-studios{grid-template-columns:1fr;}}
+footer{background:var(--dark);padding:2rem 5vw;text-align:center;margin-top:4rem;color:rgba(255,255,255,.3);font-size:.72rem;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">🌾 Святопетрівське</a>
+  <a href="index.html" class="btn-back">← На головну</a>
+</nav>
+
+<div class="container">
+  <div class="hero-sub">
+    <h1 class="page-title">🏛️ Будинок культури</h1>
+    <p style="color:rgba(245,240,232,.7); margin:0;">Осередок творчості, народних традицій та святкових подій нашої громади.</p>
+  </div>
+
+  <div class="section-card">
+    <h3>Про наш Будинок Культури</h3>
+    <p>Будинок культури в селі Святопетрівське організовує головні державні та календарні свята, благодійні концерти на підтримку ЗСУ, виставки народних умільців та тематичні вечори відпочинку для молоді й старшого покоління.</p>
+    <p>Також у приміщенні знаходиться сільська бібліотека, де зібрано понад 5 000 книг — від української класики до сучасних бестселерів та дитячої літератури.</p>
+  </div>
+
+  <div class="section-card">
+    <h3>Творчі колективи та гуртки</h3>
+    <p>Запрошуємо дітей та дорослих приєднатися до наших творчих об'єднань:</p>
+    
+    <div class="grid-studios">
+      <div class="studio-item">
+        <div class="studio-title">💃 Народний танцювальний ансамбль</div>
+        <div class="studio-text" style="font-size:.85rem; color:var(--muted);">Естрадні та традиційні українські танці. Вік: від 6 до 16 років.</div>
+      </div>
+      <div class="studio-item">
+        <div class="studio-title">🎤 Вокальна студія "Джерело"</div>
+        <div class="studio-text" style="font-size:.85rem; color:var(--muted);">Постановка голосу, сольний спів та участь у вокальних ансамблях.</div>
+      </div>
+      <div class="studio-item">
+        <div class="studio-title">🎨 Майстерня рукоділля</div>
+        <div class="studio-text" style="font-size:.85rem; color:var(--muted);">Петриківський розпис, ліпка з глини, бісероплетіння та вишивка.</div>
+      </div>
+      <div class="studio-item">
+        <div class="studio-title">🎭 Театральний гурт "Маска"</div>
+        <div class="studio-text" style="font-size:.85rem; color:var(--muted);">Акторська майстерність, сценічна мова та підготовка новорічних вистав.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 · Білогородська громада · Культурний сектор
+</footer>
+
+</body>
+</html>
