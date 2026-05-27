@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Святопетрівське — наше село</title>
 
-<!-- Оптимізація завантаження шрифтів -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -16,12 +15,41 @@
 html{scroll-behavior:smooth;}
 body{font-family:'Montserrat',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;}
 
+.dev-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  
+  background: rgba(200, 168, 75, 0.3); 
+  color: var(--dark);
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  
+  z-index: 9999;           
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Адаптивність для телефонів */
+@media (max-width: 480px) {
+  .dev-banner {
+    font-size: 0.75rem;
+    padding: 8px 10px;
+  }
+}
+
 /* ===================== АНІМАЦІЇ ПРИ СКРОЛІ (SCROLL REVEAL) ===================== */
 .reveal {
   opacity: 0;
   transform: translateY(35px);
   transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-  will-change: opacity, transform; /* Оптимізація для відеокарти */
+  will-change: opacity, transform;
 }
 .reveal.active {
   opacity: 1;
@@ -739,5 +767,6 @@ window.onload = function(){
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 };
 </script>
+<div class="dev-banner">⚠️ Сайт у розробці — деякі функції можуть не працювати, інформація може бути невірна (або її взагалі може не бути).</div>
 </body>
 </html>
