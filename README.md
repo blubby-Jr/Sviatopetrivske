@@ -1,1 +1,3 @@
-# Sviatopetrivske
+# Офіційний сайт Святопетрівського!
+
+Розробник: Bublic Bublicovich
